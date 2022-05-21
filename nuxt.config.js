@@ -1,9 +1,9 @@
 import colors from 'vuetify/es5/util/colors'
 
-// `DEPLOY_ENV` が `GH_PAGES` の場合のみ `router.base = '/<repository-name>/'` を追加する
+// `DEPLOY_ENV` が `GH_PAGES` の場合のみ `router.base = '/nuxtFirst/'` を追加する
 const routerBase = process.env.DEPLOY_ENV === 'GH_PAGES' ? {
   router: {
-    base: '/<repository-name>/'
+    base: '/nuxtFirst/'
   }
 } : {}
 
