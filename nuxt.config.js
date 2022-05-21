@@ -8,10 +8,6 @@ const routerBase = process.env.DEPLOY_ENV === 'GH_PAGES' ? {
 } : {}
 
 export default {
-  ...routerBase
-}
-
-export default {
   target: 'static',
 
   // Disable server-side rendering: https://go.nuxtjs.dev/ssr-mode
@@ -81,11 +77,9 @@ export default {
   build: {
   },
 
-  router: {
-    base: '/yoshihide-saito/'
-  },
+  ...routerBase
 
-  generate: {
-    dir: 'docs'
-  },
+  // generate: {
+  //   dir: 'docs'
+  // },
 }
