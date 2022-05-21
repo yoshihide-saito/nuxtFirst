@@ -77,9 +77,9 @@ export default {
   build: {
   },
 
-  ...routerBase
+  ...routerBase,
 
-  // generate: {
-  //   dir: 'docs'
-  // },
+  generate: {
+    dir: 'docs'
+  },
 }
