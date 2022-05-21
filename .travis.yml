@@ -12,7 +12,8 @@ branches:
 
 install:
   - yarn install
-  - DEPLOY_ENV=GH_PAGES yarn run generate
+  - yarn generate
+  # - DEPLOY_ENV=GH_PAGES yarn run generate
 
 script:
   - echo "Skipping tests"
