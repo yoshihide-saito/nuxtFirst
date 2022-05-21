@@ -9,7 +9,7 @@
     "generate": "nuxt generate",
     "test": "jest",
     "build:gh-pages": "DEPLOY_ENV=GH_PAGES nuxt build",
-    "generate:gh-pages": "DEPLOY_ENV=GH_PAGES nuxt generate"
+    "genGhPages": "DEPLOY_ENV=GH_PAGES nuxt generate"
   },
   "dependencies": {
     "core-js": "^3.19.3",
